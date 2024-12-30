@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  weather-ingest:
+    build: .
+    environment:
+      - ES_HOST=https://url-77a9e1.es.us-central1.gcp.cloud.es.io
+      - ES_USERNAME=elastic
+      - ES_PASSWORD=
+      - API_KEY=
+      - CITY=London
+    restart: always
